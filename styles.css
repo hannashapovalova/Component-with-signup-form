@@ -29,7 +29,6 @@ body {
 }
 
 .left_side {
-    
     width: 540px;
     margin-top: 175px;
     height: fit-content;
@@ -43,11 +42,10 @@ body {
 
 .left_side p {
     line-height: 1.7;
-   
 }
 
 .right_side {
-    width: 540px;
+    max-width: 540px;
 }
 
 .try_button {
@@ -70,16 +68,14 @@ body {
     color: var(--grayish-blue);
 }
 
-.white_block {
+.form_block {
     background-color: white;
     height: 470px;
     padding: 40px;
     border: none;
     border-radius: 8px;
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.17);
-
 }
-
 
 ul {
     list-style: none;
@@ -122,14 +118,11 @@ ul {
     color: var(--grayish-blue);
     text-align: center;
     font-weight: 600;
-   
 }
 
 .terms_services {
-
     color: var(--red);
     font-weight: 700;
-
 }
 
 /* FOOTER */
