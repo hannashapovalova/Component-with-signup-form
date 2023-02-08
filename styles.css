@@ -53,7 +53,7 @@ body {
 .try_button {
     background-color: var(--blue);
     color: white;
-    padding: 15px 0;
+    padding: 17px 0;
     border: none;
     width: 100%;
     border-radius: 8px;
@@ -89,21 +89,25 @@ ul {
 #last_name,
 #user_email,
 #password {
-    padding: 10px 0px 10px 25px;
+    padding: 15px 0px 15px 25px;
     width: 100%;
     border-radius: 6px;
     border: 1px solid var(--grayish-blue);
     font-family: var(--main-font);
     font-weight: 600;
     color: var(--dark-blue);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
+
+/* input:focus {
+
+} */
 
 .submit_button {
     background-color: var(--green);
     color: white;
     font-weight: 500;
-    padding: 15px 0;
+    padding: 17px 0;
     border: none;
     width: 100%;
     border-radius: 6px;
@@ -117,14 +121,14 @@ ul {
     font-size: 10px;
     color: var(--grayish-blue);
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
    
 }
 
 .terms_services {
 
     color: var(--red);
-    font-weight: 600;
+    font-weight: 700;
 
 }
 
