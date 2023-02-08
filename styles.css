@@ -6,6 +6,7 @@
 --blue: hsl(248, 32%, 49%);
 --dark-blue: hsl(249, 10%, 26%);
 --grayish-blue: hsl(246, 25%, 77%);
+--main-font: 'Poppins', sans-serif;
 }
 
 * {
@@ -14,7 +15,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--main-font);
     background-image: url('./images/bg-intro-desktop.png');
     background-color: var(--red);
 }
@@ -46,13 +47,35 @@ body {
 }
 
 .right_side {
-    background-color: greenyellow;
     width: 540px;
+}
+
+.try_button {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px 0;
+    border: none;
+    width: 100%;
+    border-radius: 11px;
+    font-family: var(--main-font);
+    margin-bottom: 25px;
+}
+
+.try_button_bold {
+    font-weight: 600;
+}
+
+.try_button_thin {
+    color: var(--grayish-blue);
 }
 
 .white_block {
     background-color: white;
     height: 470px;
+    padding: 40px;
+    border: none;
+    border-radius: 11px;
+
 }
 
 
