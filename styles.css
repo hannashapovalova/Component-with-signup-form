@@ -19,20 +19,61 @@ body {
     background-color: var(--red);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 110px auto;
+    font-size: 16px;
+}
+
+.left_side {
+    
+    width: 540px;
+    margin-top: 175px;
+    height: fit-content;
+    color: white;
+}
+
+.left_side h1 { 
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.left_side p {
+    line-height: 1.7;
+   
+}
+
+.right_side {
+    background-color: greenyellow;
+    width: 540px;
+}
+
+.white_block {
+    background-color: white;
+    height: 470px;
+}
 
 
-
-
+ul {
+    list-style: none;
+}
 
 
 
 
 /* FOOTER */
 
-.attribution { 
-    font-size: 11px; 
+.attribution {
+    font-size: 11px;
     text-align: center; 
-}
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
