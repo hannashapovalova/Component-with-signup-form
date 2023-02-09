@@ -39,12 +39,6 @@ function addError(field, message) {
     const formItem = form[field].parentNode;
     formItem.classList.add('error');
 
-
-
-
-
-
-
     const errorText = formItem.querySelector('.error_text');
     errorText.innerText = message;
     errorText.style.opacity = '1';
