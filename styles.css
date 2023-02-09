@@ -136,16 +136,6 @@ label {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .submit_button {
     background-color: var(--green);
     color: white;
@@ -200,3 +190,29 @@ label {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media (max-width: 630px) {
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0 25px;
+    }
+
+    .left_side {
+        margin: 50px auto;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .try_button {
+        font-size: 17px;
+        padding: 17px 10px;
+    }
+
+    .attribution { 
+        font-size: 11px; 
+        text-align: center; 
+        margin: 25px auto;
+        position: relative;
+    }
+  }
