@@ -36,13 +36,24 @@ form.addEventListener('submit', e => {
 });
 
 function addError(field, message) {
-    const errorText = form[field].parentNode.querySelector('.error_text');
+    const formItem = form[field].parentNode;
+    formItem.classList.add('error');
+
+
+
+
+
+
+
+    const errorText = formItem.querySelector('.error_text');
     errorText.innerText = message;
     errorText.style.opacity = '1';
 };
 
 function removeError(field) {
-    const errorText = form[field].parentNode.querySelector('.error_text');
+    const formItem = form[field].parentNode;
+    formItem.classList.remove('error');
+    const errorText = formItem.querySelector('.error_text');
     errorText.style.opacity = '0';
 };
 

@@ -109,6 +109,11 @@ label {
     text-transform: capitalize;
 }
 
+.form_item.error input {
+    border: 2px solid var(--red);
+    color: var(--red);
+}
+
 .input:focus {
 	border: 1.5px solid var(--dark-blue);
     outline: none; 
