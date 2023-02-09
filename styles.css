@@ -59,6 +59,7 @@ body {
     margin-bottom: 25px;
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.17);
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .try_button_bold {
@@ -153,6 +154,7 @@ label {
     box-shadow: 0px 3px 0px 1px rgba(0,0,0,0.25);
     text-transform: uppercase;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .submit_button:hover {
