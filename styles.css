@@ -85,10 +85,7 @@ label {
     display: none;
 }
 
-#first_name,
-#last_name,
-#user_email,
-#password {
+.input {
     padding: 15px 0px 15px 25px;
     width: 100%;
     border-radius: 6px;
@@ -106,9 +103,11 @@ label {
     text-transform: capitalize;
 }
 
-/* input:focus {
+.input:focus {
 	border: 1.5px solid var(--dark-blue);
-} */
+    outline: none; 
+}
+                        
 
 .form_item {
     margin-bottom: 10px;
