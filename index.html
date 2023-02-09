@@ -33,31 +33,48 @@
           <div class="form">
             <form action="#">
               <ul>
-                <li>
+                <li class="form_item">
+                  <label for="first-name">First Name</label>
                   <input 
                    type="text" 
                    name="first-name" 
                    id="first_name" 
                    value="" 
                    placeholder="First Name">
+                   <!-- <img
+                     src="images/icon-error.svg" 
+                     class="error_icon" 
+                     alt="Error-icon"> -->
+                    <p class="error_text">
+                      First Name cannot be empty
+                    </p>  
                 </li>
-                <li>
+                <li class="form_item">
+                  <label for="last-name">Last Name</label>
                   <input 
                    type="text" 
                    name="last-name" 
                    id="last_name" 
                    value=""
-                    placeholder="Last Name">
+                   placeholder="Last Name">
+                   <p class="error_text">
+                    Last Name cannot be  empty
+                   </p>
                 </li>
-                <li>
+                <li class="form_item">
+                  <label for="Email">Email Address</label>
                   <input 
                    type="email" 
                    name="mail" 
                    id="user_email" 
                    value="" 
                    placeholder="Email Address">
+                   <p class="error_text">
+                    Looks like this is not an email
+                  </p>
                 </li>
-                <li>
+                <li class="form_item">
+                  <label for="password">Password Address</label>
                   <input
                    type="password" 
                    name="password" 
@@ -65,6 +82,9 @@
                    value="" 
                    placeholder="Password" 
                    required>
+                   <p class="error_text">
+                    Password cannot be empty
+                  </p>
                 </li>
                 <li>
                   <input 

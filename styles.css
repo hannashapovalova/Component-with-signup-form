@@ -18,6 +18,7 @@ body {
     font-family: var(--main-font);
     background-image: url('./images/bg-intro-desktop.png');
     background-color: var(--red);
+    font-size: 16px;
 }
 
 .container {
@@ -25,11 +26,10 @@ body {
     justify-content: center;
     flex-direction: row;
     margin: 110px auto;
-    font-size: 16px;
 }
 
 .left_side {
-    width: 540px;
+    max-width: 540px;
     margin-top: 175px;
     height: fit-content;
     color: white;
@@ -81,6 +81,10 @@ ul {
     list-style: none;
 }
 
+label {
+    display: none;
+}
+
 #first_name,
 #last_name,
 #user_email,
@@ -92,12 +96,44 @@ ul {
     font-family: var(--main-font);
     font-weight: 600;
     color: var(--dark-blue);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    /* background-image: url('images/icon-error.svg');
+    background-repeat: no-repeat; */
+}
+
+#first_name,
+#last_name {
+    text-transform: capitalize;
 }
 
 /* input:focus {
-
+	border: 1.5px solid var(--dark-blue);
 } */
+
+.form_item {
+    margin-bottom: 10px;
+}
+
+.error_text {
+	text-align: right;
+	font-size: 10px;
+	font-style: italic;
+	color: var(--red);
+	font-weight: 600;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .submit_button {
     background-color: var(--green);
