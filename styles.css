@@ -164,6 +164,7 @@ label {
     cursor: pointer;
     box-shadow: 0 2px hsl(154, 59%, 45%);
     letter-spacing: 1px;
+    height: fit-content;
 }
 
 .submit_button:focus {
