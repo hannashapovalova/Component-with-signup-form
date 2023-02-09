@@ -14,28 +14,56 @@ form.addEventListener('submit', e => {
     const password = form['password'].value;
 
     if(firstName === '') {
-        addErrorTo('first_name', 'First Name cannot be empty');
+        addError('first_name', 'First Name cannot be empty');
+    } else {
+        removeError('first_name');
     }
+
+
     if(lastName === '') {
-        addErrorTo('last_name', 'Last Name cannot be  empty');
+        addError('last_name', 'Last Name cannot be  empty');
+    } else {
+        removeError('last_name')
     }
-    if(isValid(userEmail)) {
-        addErrorTo('user_email', 'Looks like this is not an email');
+
+
+    if(userEmail === '') {
+        addError('user_email', 'Email cannot be  empty');
+    } else if (!isValid(userEmail)) {
+        addError('user_email', 'Looks like this is not an email');
+    } else {
+        removeError('user_email')
     }
+
+
     if(password === '') {
-        addErrorTo('password', 'Password cannot be empty');
+        addError('password', 'Password cannot be empty');
+    } else {
+        removeError('password')
     }
 });
 
 
-function addErrorTo(field, message) {
+function addError(field, message) {
     const errorText = form[field].parentNode.querySelector('.error_text');
     errorText.innerText = message;
     errorText.style.opacity = '1';
 
 };
 
-function isValid(email) {
-        const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        return re.test(String(email).toLowerCase());
-    }
+function removeError(field) {
+    const errorText = form[field].parentNode.querySelector('.error_text');
+    errorText.style.opacity = '0';
+};
+
+
+
+function isValid(userEmail) {
+    return String(userEmail)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  }
+
+
