@@ -1,10 +1,5 @@
 const form = document.getElementById('form');
 
-
-
-
-
-
 form.addEventListener('submit', e => {
     e.preventDefault();
 
@@ -19,13 +14,11 @@ form.addEventListener('submit', e => {
         removeError('first_name');
     }
 
-
     if(lastName === '') {
         addError('last_name', 'Last Name cannot be  empty');
     } else {
         removeError('last_name')
     }
-
 
     if(userEmail === '') {
         addError('user_email', 'Email cannot be  empty');
@@ -35,7 +28,6 @@ form.addEventListener('submit', e => {
         removeError('user_email')
     }
 
-
     if(password === '') {
         addError('password', 'Password cannot be empty');
     } else {
@@ -43,20 +35,16 @@ form.addEventListener('submit', e => {
     }
 });
 
-
 function addError(field, message) {
     const errorText = form[field].parentNode.querySelector('.error_text');
     errorText.innerText = message;
     errorText.style.opacity = '1';
-
 };
 
 function removeError(field) {
     const errorText = form[field].parentNode.querySelector('.error_text');
     errorText.style.opacity = '0';
 };
-
-
 
 function isValid(userEmail) {
     return String(userEmail)
