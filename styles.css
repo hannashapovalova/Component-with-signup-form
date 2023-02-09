@@ -58,6 +58,7 @@ body {
     font-family: var(--main-font);
     margin-bottom: 25px;
     box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.17);
+    transition: all 0.5s ease-in-out;
 }
 
 .try_button_bold {
@@ -66,6 +67,10 @@ body {
 
 .try_button_thin {
     color: var(--grayish-blue);
+}
+
+.try_button:hover {
+    background-color: hsl(248, 32%, 49%, 0.9);
 }
 
 .form_block {
@@ -146,6 +151,11 @@ label {
     margin-bottom: 20px;
     box-shadow: 0px 3px 0px 1px rgba(0,0,0,0.25);
     text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.submit_button:hover {
+    background-color: hsl(154, 59%, 51%, 0.7);
 }
 
 .agreement {
